@@ -9,7 +9,6 @@ urlpatterns = patterns('',
                        # url(r'^$', 'tong.views.home', name='home'),
                        # url(r'^tong/', include('tong.foo.urls')),
                        url(r'^', include('home.urls')),
-                       url(r'^feedback/', include('feedback.urls'))
                        # Uncomment the admin/doc line below to enable admin documentation:
                        # url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
 

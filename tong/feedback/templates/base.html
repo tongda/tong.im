@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="style.css" />
+		<title>
+		{% block title %}
+			Tong Da Home
+		{% endblock title %}
+		</title>
+	</head>
+	<body>
+		<div id="sidebar">
+			{% block sidebar %}
+				<ul>
+					<li><a href="/">Home</a></li>
+					<li><a href="/feedback">Feedback</a></li>
+				</ul>
+			{% endblock sidebar %}
+		</div>
+		<div id="content">
+			{% block content %}
+				
+			{% endblock content %}
+		</div>
+	</body>
+</html>

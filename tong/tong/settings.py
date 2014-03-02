@@ -1,5 +1,9 @@
 # Django settings for tong project.
 
+import os
+
+ROOT_PATH = os.path.join(os.path.join(os.path.abspath(__file__), os.path.pardir), os.path.pardir)
+
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
@@ -69,6 +73,7 @@ STATIC_URL = '/static/'
 
 # Additional locations of static files
 STATICFILES_DIRS = (
+    os.path.join(ROOT_PATH, 'static'),
     # Put strings here, like "/home/html/static" or "C:/www/django/static".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.

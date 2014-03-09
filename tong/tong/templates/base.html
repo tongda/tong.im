@@ -17,7 +17,10 @@
     </aside>
 
     <div id="main">
-
+      {% block content %}
+        
+        {% block main %} {% endblock main %}
+      {% endblock content %}
     </div>
 
     {% include 'tong/_scripts.html' %}

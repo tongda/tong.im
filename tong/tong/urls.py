@@ -5,7 +5,10 @@ from django.conf.urls import patterns, include, url
 # admin.autodiscover()
 
 urlpatterns = patterns('',
-                       url(r'^$', 'tong.views.index')
+                       url(r'^$', 'tong.views.get_home', name='home'),
+                       url(r'^home/', include('tong.home.urls', namespace='home')),
+                       url(r'^blog/', include('tong.blog.urls', namespace='home')),
+                       url(r'^about/', include('tong.about.urls', namespace='home')),
                        # Examples:
                        # url(r'^$', 'tong.views.home', name='home'),
                        # url(r'^tong/', include('tong.foo.urls')),

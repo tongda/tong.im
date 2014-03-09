@@ -1,4 +1,5 @@
-from django.shortcuts import render
+from django.shortcuts import redirect
+from django.core.urlresolvers import reverse
 
-def index(request):
-	return render(request, 'tong/index.html')
+def get_home(request):
+	return redirect(reverse('home:index'))

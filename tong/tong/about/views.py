@@ -6,7 +6,7 @@ def index(request):
 
 
 def resume(request):
-    return render(request, 'about/index.html')
+    return render(request, 'about/resume.html')
 
 
 def timeline(request):
